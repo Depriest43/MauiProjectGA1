@@ -14,8 +14,13 @@
             <Label Text="Number 2" />
             <Entry x:Name="txtNumber2" />
             <Label x:Name="lblResult" />
-            <Button Text="Add" x:Name="btnAdd" Clicked="ONAddClicked" />
+            <Button Text="Add" x:Name="btnAdd" Clicked="btnAdd_Clicked"/>
         </VerticalStackLayout>
+        <Button Text="Add" x:Name="btnAdd" Clicked="btnAdd_Clicked"/>
+        <Button Text="Subtract" x:Name="btnSubtract" Clicked="btnSubtract_Clicked"/>
+        <Button Text="Multiply" x:Name="btnMultiply" Clicked="btnMultiply_Clicked"/>
+        <Button Text="Divide" x:Name="btnDivide" Clicked="btnDivide_Clicked"/>
+        </Button>
     </ScrollView>
 
 </ContentPage>

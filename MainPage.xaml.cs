@@ -7,18 +7,22 @@ public partial class MainPage : ContentPage
 	public MainPage()
 	{
 		InitializeComponent();
+
+
 	}
 
-	private void OnCounterClicked(object sender, EventArgs e)
+
+
+	private void btnAdd_Clicked(object sender, EventArgs e)
 	{
-		count++;
+		//Start writing code here.
+		doble.tryParse(txtNumber1.Text, out count);
+		double.TryParse(txtNumber2.Text, out count);
+		double result = number1 + number2;
+		lblResult.Text = $("Result: {result}");
+	}
 
-		if (count == 1)
-			CounterBtn.Text = $"Clicked {count} time";
-		else
-			CounterBtn.Text = $"Clicked {count} times";
 
-		SemanticScreenReader.Announce(CounterBtn.Text);
 	}
 }
 
